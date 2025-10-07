@@ -35,22 +35,23 @@ Read the installation guide in this repo at HLA_INSTALLATION_GUIDE.md.
   5. Vim will write the selected lines to the file TEST. Use :!ls to see it.
      Do not remove it yet! We will use it in the next lesson.
 
-    NOTE: Pressing v starts Visual selection. You can move the cursor around
-    to make the selection bigger or smaller. Then you can use an operator
-    to do something with the text. For example, d deletes the text.
-    QUICK TIP FOR THIS TUTOR: After uncommenting and editing a lesson's code,
-    select just that uncommented block (v, move to cover it), then :w! run.c
-    to dump it to run.c. Then :!gcc run.c -o run && ./run to execute it right
-    in Vim. See your output or errors without leaving the editor. Efficient,
-    no? Do this per lesson—keeps shit isolated, no global link-time fuckups.
+    NOTE: Pressing v starts Visual selection. You can move the cursor around to
+    make the selection bigger or smaller. Then you can use an operator to do
+    something with the text. For example, d deletes the text.  QUICK TIP FOR
+    THIS TUTOR: After uncommenting and editing a lesson's code, select just
+    that uncommented block (v, move to cover it), then :w! main.hla to dump it
+    to main.hla. Then :!hla main.hla && ./main to execute it. See your output
+    or errors without leaving the editor. Efficient, no? Do this per
+    lesson—keeps shit isolated, no global link-time fuckups.
 */
-//
+
 // =============================================================================
 // PART I: HIGH LEVEL ASSEMBLY
-// ============================================================================= 
+// =============================================================================
+
 // Lesson 1.1: HELLO, WORLD
 /*
-program helloWorld;
+program helloWorld; 
 #include( "stdlib.hhf" );
 
 begin helloWorld;
@@ -67,7 +68,7 @@ end helloWorld;
 // Lesson 1.2: VARIABLES
 /*
 Program DemoVars;
-#include( "stdlib.hhf" )
+#include( "stdlib.hhf" );
 
 static
     InitDemo:       int32 := 5;
