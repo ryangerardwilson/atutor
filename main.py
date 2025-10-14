@@ -19,7 +19,7 @@ with open(tutorial_path, "r", encoding="utf-8") as f:
 
 def main():
     with tempfile.NamedTemporaryFile(
-        mode="w", suffix=".c", encoding="utf-8", delete=False
+        mode="w", suffix=".hla", encoding="utf-8", delete=False
     ) as tmp:
         tmp.write(original_content)
         temp_file = tmp.name
